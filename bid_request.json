@@ -1,0 +1,70 @@
+{
+    "id": "request-id-12345",
+    "imp": [
+      {
+        "id": "imp-id-67890",
+        "banner": {
+          "w": 300,
+          "h": 250
+        },
+        "displaymanager": "example-display-manager",
+        "displaymanagerver": "1.0",
+        "tagid": "example-tag-id",
+        "bidfloor": 2.0,
+        "bidfloorcur": "USD",
+        "clickbrowser": 1
+      }
+    ],
+    "device": {
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+      "ip": "192.0.2.1",
+      "geo": {
+        "country": "USA",
+        "region": "CA",
+        "city": "Los Angeles",
+        "zip": "90001",
+        "lat": 34.0522,
+        "lon": -118.2437
+      },
+      "os": "Mac OS X",
+      "model": "MacBookPro16,1",
+      "connectiontype": 2,
+      "ifa": "AAID-EXAMPLE-1234-5678"
+    },
+    "user": {
+      "id": "user-id-9876",
+      "buyeruid": "buyer-id-5432"
+    },
+    "tmax": 120,
+    "badv": [
+      "example.com/bad-advertiser-1",
+      "example.com/bad-advertiser-2"
+    ],
+    "bcat": [
+      "IAB1",
+      "IAB2",
+      "IAB3-1"
+    ],
+    "btype": [
+      2,
+      5
+    ],
+    "ext": {
+      "schain": {
+        "ver": "1.0",
+        "complete": 1,
+        "nodes": [
+          {
+            "asi": "example.com",
+            "sid": "seller-id-1",
+            "hp": 1,
+            "rid": "request-id-abcde",
+            "bidder_id": 123,
+            "ext": {
+              "origin": "example.com"
+            }
+          }
+        ]
+      }
+    }
+  }

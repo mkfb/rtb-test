@@ -1,0 +1,29 @@
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: router/Dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - bidder
+    volumes:
+      - ./logs:/var/log/nginx
+
+  bidder:
+    build:
+      context: .
+      dockerfile: bidder/Dockerfile
+    expose:
+      - "8080"
+
+  traffic:
+    build:
+      context: .
+      dockerfile: traffic/Dockerfile
+    depends_on:
+      - nginx
+
+networks:
+  default:
+    name: rtb
