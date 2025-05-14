@@ -15,7 +15,8 @@ To send request
 To configure log rotate 
 add to /etc/logrotate.d/nginx
 
-```~/rtb/logs/*.log {
+```
+  ~/rtb/logs/*.log {
   size 1M
   missingok
   rotate 7
