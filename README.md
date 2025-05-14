@@ -12,6 +12,10 @@ To send request
 
 ```curl -X POST -H "Content-Type: application/json" -H "X-DevOps-Test: true" -d @bid_request.json http://localhost/bid```
 
+Monitoring
+
+```http://localhost/nginx_status```
+
 To configure log rotate 
 add to /etc/logrotate.d/nginx
 
